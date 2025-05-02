@@ -34,7 +34,7 @@ export default PostDetails;
 
 export async function loader({params}) {
   const response = await fetch(
-    "https://your-backend-service.onrender.com/posts" + params.postId
+    "https://simple-profile-viewer-backend.onrender.com/posts/" + params.postId
   );
   const resData = await response.json();
   return resData.post;

@@ -30,7 +30,7 @@ export default NewPost;
 export async function action({ request }) {
   const formData = await request.formData();
   const postData = Object.fromEntries(formData)
-  await fetch("https://your-backend-service.onrender.com/posts", {
+  await fetch("https://simple-profile-viewer-backend.onrender.com/posts", {
     method: "POST",
     body: JSON.stringify(postData),
     headers: {
